@@ -1,0 +1,82 @@
+{
+  "display_name": "Fresnel Calc",
+  "fields": {
+    "AllowanceDueToEarthsCurve": {
+      "display_name": "Allowance Due To Earths Curve",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "Distance1": {
+      "display_name": "Distance 1",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "Distance2": {
+      "display_name": "Distance 2",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "DistanceFrom3rdFresnel": {
+      "display_name": "Distance From 3 rd Fresnel",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "Frequency": {
+      "display_name": "Frequency",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "HigherRadioTotalElevation": {
+      "display_name": "Higher Radio Total Elevation",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "ID": {
+      "display_name": "ID",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "LowerRadioTotalElevation": {
+      "display_name": "Lower Radio Total Elevation",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "RadioTilt": {
+      "display_name": "Radio Tilt",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "SuspectedObstructionElevation": {
+      "display_name": "Suspected Obstruction Elevation",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    },
+    "ThirdFresnelRadius": {
+      "display_name": "Third Fresnel Radius",
+      "help": "",
+      "pattern_msg": "",
+      "err_msg": {},
+      "Choices": {}
+    }
+  }
+}
