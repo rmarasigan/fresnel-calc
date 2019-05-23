@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"math"
 
 	"github.com/uadmin/uadmin"
@@ -10,20 +9,22 @@ import (
 // FresnelCalc !
 type FresnelCalc struct {
 	uadmin.Model
-	Distance1                     float64 `uadmin:"required;list_exclude"`
-	Distance2                     float64 `uadmin:"required"`
-	LowerRadioTotalElevation      float64
-	HigherRadioTotalElevation     float64
-	SuspectedObstructionElevation float64
-	Frequency                     float64
-	ThirdFresnelRadius            float64 `uadmin:"read_only"`
-	AllowanceDueToEarthsCurve     float64 `uadmin:"read_only"`
-	DistanceFrom3rdFresnel        float64 `uadmin:"read_only"`
+	Name                          string  `uadmin:"list_exclude"`
+	Description                   string  `uadmin:"html"`
+	Distance1                     float64 `uadmin:"required;help:meters"`
+	Distance2                     float64 `uadmin:"required;help:meters"`
+	LowerRadioTotalElevation      float64 `uadmin:"help:Land height + Bldg. height + Tower height (meters)"`
+	HigherRadioTotalElevation     float64 `uadmin:"help:Land height + Bldg. height + Tower height (meters)"`
+	SuspectedObstructionElevation float64 `uadmin:"help:Land height + Obstruction height (meters)"`
+	Frequency                     float64 `uadmin:"required;help:Mhz"`
+	ThirdFresnelRadius            float64 `uadmin:"read_only;help:m"`
+	AllowanceDueToEarthsCurve     float64 `uadmin:"read_only;help:m"`
+	DistanceFrom3rdFresnel        float64 `uadmin:"read_only;help:+ if good, - if bad"`
 	RadioTilt                     float64 `uadmin:"read_only"`
 }
 
 func (f *FresnelCalc) String() string {
-	return fmt.Sprintf("%.2f", f.Distance1)
+	return f.Name
 }
 
 // Save !
